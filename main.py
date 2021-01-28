@@ -12,7 +12,7 @@ import os
 class WppBot:
 
     def __init__(self):
-        self.nombre_contacto = "M&M"
+        self.nombre_contacto = "Celeste"
         # options = webdriver.ChromeOptions()
         # options.add_argument("lang=pt-br")
         self.browser = webdriver.Chrome()
@@ -57,7 +57,7 @@ class WppBot:
             texto = str(texto)
 
             # if not texto: continue
-            if len(texto)==0: texto = 'carita'
+            if len(texto)==0: texto = 'y entonces que onda?'
             
             if texto != self.ultimo_texto and texto[0] != ':':
                 self.ultimo_texto = texto
